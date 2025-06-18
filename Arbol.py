@@ -1,7 +1,7 @@
 # Definimos la clase Persona para representar a cada miembro del árbol genealógico
 class Persona:
     def __init__(self, nombre):
-        self.nombre = nombre                    # Nombre de la persona
+        self.nombre = nombre.upper()           # Nombre de la persona
         self.hijo_izquierdo = None             # Referencia al primer hijo (izquierdo)
         self.hijo_derecho = None               # Referencia al segundo hijo (derecho)
 
@@ -17,7 +17,7 @@ def imprimir_arbol(persona, nivel=0):
 def buscar_persona(raiz, nombre):
     if raiz is None:
         return None
-    if raiz.nombre == nombre:
+    if raiz.nombre == nombre.upper():
         return raiz
     izquierda = buscar_persona(raiz.hijo_izquierdo, nombre)
     if izquierda:
@@ -44,18 +44,18 @@ while True:
         # Se busca la persona a quien se le quiere agregar un hijo
         padre = buscar_persona(raiz, padre_nombre)
         if padre is None:
-            print("❌ Persona no encontrada.")  # No se encontró a esa persona en el árbol
+            print("Persona no encontrada.")  # No se encontró a esa persona en el árbol
         else:
             # Si se encuentra, se crea el nuevo hijo
             nuevo_hijo = Persona(nuevo_nombre)
             if padre.hijo_izquierdo is None:
                 padre.hijo_izquierdo = nuevo_hijo  # Se agrega como hijo izquierdo
-                print(f"✅ Hijo agregado a la izquierda de {padre.nombre}.")
+                print(f"Hijo agregado a la izquierda de {padre.nombre}.")
             elif padre.hijo_derecho is None:
                 padre.hijo_derecho = nuevo_hijo  # Se agrega como hijo derecho
-                print(f"✅ Hijo agregado a la derecha de {padre.nombre}.")
+                print(f"Hijo agregado a la derecha de {padre.nombre}.")
             else:
-                print("⚠️ Esta persona ya tiene dos hijos.")  # Ya tiene el máximo de hijos permitidos
+                print("Esta persona ya tiene dos hijos.")  # Ya tiene el máximo de hijos permitidos
     elif opcion == "2":
         # Muestra el árbol actual con todos sus miembros
         print("\nÁrbol Genealógico:")
@@ -63,8 +63,8 @@ while True:
 
     elif opcion == "3":
         # Finaliza el programa
-        print("👋 Saliendo del programa.")
+        print("Saliendo del programa.")
         break
     else:
         # Opción inválida del menú
-        print("❌ Opción no válida.")
+        print("Opción no válida.")
