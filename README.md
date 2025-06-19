@@ -43,7 +43,10 @@ Este proyecto es una aplicación simple de consola desarrollada en Python que pe
    Opciones:
    1. Agregar hijo
    2. Mostrar árbol genealógico
-   3. Salir
+   3. Recorrido INORDEN
+   4. Recorrido PREORDEN
+   5. Recorrido POSTORDEN
+   6. Salir
    Seleccione una opción:
 
    Si seleccionas la opción 1, lo que harás es agregar un hijo y te pedirá que ingreses
@@ -64,7 +67,13 @@ Este proyecto es una aplicación simple de consola desarrollada en Python que pe
      - Pedro (Jerarquía 1)
        - Sofía (Jerarquía 2)
    
-   Eligiendo la opción 3, el programa finaliza con el siguiente mensaje: Saliendo del programa.
+   Eligiendo la opción 3, lo que hará el programa es mostrarte en el momento actual el recorrido de forma INORDEN
+
+   Eligiendo la opción 4, lo que hará el programa es mostrarte en el momento actual el recorrido de forma PREORDEN
+
+   Eligiendo la opción 5, lo que hará el programa es mostrarte en el momento actual el recorrido de forma POSTORDEN
+
+   Eligiendo la opción 6, el programa finaliza y te muestra el siguiente mensaje: Saliendo del programa.
   # Notas
 - El programa está diseñado para funcionar como un árbol binario, por lo que cada persona puede tener como máximo dos hijos.
 
