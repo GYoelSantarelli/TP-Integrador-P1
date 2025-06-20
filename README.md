@@ -7,7 +7,7 @@ Tutores: Gubiotti Florencia, Neyén Bianchi
 
 Alumnos: Rocio Santarelli comisión 9, Yoel Santarelli comisión 21.
 
-Link del video: [Trabajo practico integrador Programación 1](https://youtu.be/gFoT_QnMEm0)
+Link del video: [Trabajo practico integrador Programación 1](https://youtu.be/6aZK0mN7oFA)
 
 Este proyecto es una aplicación simple de consola desarrollada en Python que permite construir e imprimir un árbol genealógico. Los usuarios pueden agregar hasta dos hijos por persona y visualizar la estructura familiar de manera jerárquica.
 
